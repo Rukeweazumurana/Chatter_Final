@@ -11,7 +11,7 @@ function App() {
         <div>
           <a href="./">CHATTER</a>
         </div>
-        <div class="navlinks">
+        <div className="navlinks">
           <a href="">Home</a>
           <a href="">About us</a>
           <a href="">Contact</a>
@@ -23,15 +23,26 @@ function App() {
         </div>
       </nav>
       <div className="chatter-home">
+        <div>
           <h1>Welcome to Chatter: A Haven for Text-Based Content</h1>
           <p>
             Unleash the Power of Words, Connect with Like-minded Readers and
             Writers.
           </p>
           <button>Get started</button>
+          </div>
+      </div>
+      <div className="about">
+        <div>
+          <h2>About Chatter</h2>
+          <p>
+Chatter is a multi-functional platform where authors and readers can have access to their own content. It aims to be a traditional bookworm's heaven and a blog to get access to more text based content. Our vision is to foster an inclusive and vibrant community where diversity is celebrated. We encourage open-mindedness and respect for all individuals, regardless of their backgrounds or beliefs. By promoting dialogue and understanding, we strive </p>
+        </div>
+        <div></div>
       </div>
     </>
   );
 }
 
 export default App;
+
