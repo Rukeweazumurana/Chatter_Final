@@ -45,4 +45,3 @@ Chatter is a multi-functional platform where authors and readers can have access
 }
 
 export default App;
-
