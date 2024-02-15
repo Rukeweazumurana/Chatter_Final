@@ -155,7 +155,7 @@ function App() {
           </div>
         </div>
       </div>
-      <main>
+      <article>
         <div>
 
         </div>
@@ -169,7 +169,7 @@ function App() {
           <p>Adebobola Muhydeen, Software developer at Apple </p>
           <button>Join chatter</button>
         </div>
-      </main>
+      </article>
     </>
   );
 }
