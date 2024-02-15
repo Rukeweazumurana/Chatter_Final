@@ -157,7 +157,7 @@ function App() {
       </div>
       <main>
         <div>
-          <img src="./assets/article.png" />
+
         </div>
         <div>
           <p>
@@ -166,6 +166,8 @@ function App() {
             vibrant community of individuals who are passionate about sharing
             their ideas and engaging in thoughtful discussions.”
           </p>
+          <p>Adebobola Muhydeen, Software developer at Apple </p>
+          <button>Join chatter</button>
         </div>
       </main>
     </>
