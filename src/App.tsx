@@ -1,24 +1,38 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <>
+       <Router>
       <nav>
         <div>
-          <a href="./">CHATTER</a>
+          <Link to="/">CHATTER</Link>
         </div>
         <div className="navlinks">
-          <a href="">Home</a>
-          <a href="">About us</a>
-          <a href="">Contact</a>
-          <a href="">Blogs</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About us</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/blogs">Blogs</Link>
         </div>
         <div>
-          <button>Log in</button>
-          <button>Sign up</button>
+          <Link to="/login">
+            <button>Log in</button>
+          </Link>
+          <Link to="/signup">
+            <button>Sign up</button>
+          </Link>
         </div>
       </nav>
+
+      <Route path="/about" component={AboutUs} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/blogs" component={Blogs} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={SignUp} />
+      <Route path="/" exact component={Home} />
+    </Router>
       <div className="chatter-home">
         <div>
           <h1>Welcome to Chatter: A Haven for Text-Based Content</h1>
@@ -157,7 +171,7 @@ function App() {
       </div>
       <article>
         <div>
-
+          <img src="../assets/Man.svg" alt="picture of a man" />
         </div>
         <div>
           <p>
@@ -166,10 +180,48 @@ function App() {
             vibrant community of individuals who are passionate about sharing
             their ideas and engaging in thoughtful discussions.”
           </p>
-          <p>Adebobola Muhydeen, Software developer at Apple </p>
+          <p><span>Adebobola Muhydeen,</span> Software developer at Apple </p>
           <button>Join chatter</button>
         </div>
       </article>
+      <main>
+        <div>
+          
+        </div>
+        <div>
+          <h2>Write, read and connect with great minds on chatter</h2>
+          <p>Share people your great ideas, and also read write-ups based on your interests. connect with people of same interests and goals  </p>
+          <button>Get started</button>
+        </div>
+      </main>
+      <footer>
+        <div>
+        <h2>CHATTER</h2>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ol>
+            <li>Community</li>
+            <li>Trending Blogs</li>
+            <li>Chatter for teams</li>
+          </ol>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <ol>
+            <li>Support docs</li>
+            <li>Join slack</li>
+            <li>Contact</li>
+          </ol>
+        </div>
+        <div>
+          <h5>Official blog</h5>
+          <ol>
+            <li>Official blog</li>
+            <li>Engineering blog</li>
+          </ol>
+        </div>
+      </footer>
     </>
   );
 }
