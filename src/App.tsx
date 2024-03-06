@@ -26,12 +26,12 @@ function App() {
         </div>
       </nav>
 
-      <Route path="/about" component={AboutUs} />
+      {/* <Route path="/about" component={AboutUs} />
       <Route path="/contact" component={Contact} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={SignUp} />
-      <Route path="/" exact component={Home} />
+      <Route path="/" exact component={Home} /> */}
     </Router>
       <div className="chatter-home">
         <div>
